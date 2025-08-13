@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> Arquimedesite.com </title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #000;
+      color: #00e1ff;
+      height: 60px;
+      position: relative;
+      font-size: 35px;
+      font-weight: bold;
+    }
+
+    #menu-toggle {
+      display: none;
+    }
+
+    .menu-icon {
+      position: absolute;
+      left: 15px;
+      font-size: 24px;
+      color: #fff0f0;
+      cursor: pointer;
+      z-index: 3;
+    }
+
+    .side-menu {
+      position: fixed;
+      top: 0;
+      left: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #007e87;
+      color: white;
+      padding-top: 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: left 0.3s ease;
+      z-index: 2;
+    }
+
+    .side-menu a {
+      color: black;
+      text-decoration: none;
+      padding: 15px 20px;
+      border-bottom: 1px solid #333;
+      font-size: 20px;
+    }
+
+    .side-menu a:hover {
+      background-color: #444;
+    }
+
+    #menu-toggle:checked ~ .side-menu {
+      left: 0;
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 100%;
+      margin: auto;
+      background-color: #007e87;
+      color: white;
+      border: 10px solid #333;
+    }
+
+    .content h1 {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .content p {
+      text-align: justify;
+      line-height: 1.6;
+      font-size: 35px;
+    }
+
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 5px 10px;
+      font-size: 12px;
+      line-height: 1.2;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    footer div {
+      flex: 1 1 250px;
+    }
+
+    footer img {
+      max-width: 155px;
+      height: auto;
+      align-self: flex-end;
+    }
+
+    footer p{
+     font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="checkbox" id="menu-toggle">
+
+  <div class="top-bar">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+    ARQUIMEDESITE.COM
+  </div>
+
+  <div class="side-menu">
+    <a href="index.html">Início</a>
+    <a href="angulos.html">angulos</a>
+    <a href="trigonometria.html">trigonometria</a>
+   
+  </div>
+     
+  <div class="content">
+    <h1>Trigonometria</h1>
+    <p>A trigonometria é um ramo da matemática que estuda as relações entre os ângulos e os lados dos triângulos. Ela tem um papel fundamental em diversas áreas do conhecimento, como física, engenharia, arquitetura, astronomia e até na tecnologia. Seu uso permite resolver problemas que envolvem medidas de distâncias, alturas e ângulos, mesmo quando não é possível medir diretamente.</p>
+    <p>Além de ser aplicada em triângulos, a trigonometria também se estende ao estudo de fenômenos periódicos, como ondas sonoras, luz, movimentos circulares e oscilações. Suas funções são amplamente utilizadas em cálculos envolvendo circuitos elétricos, gráficos, navegação por satélite, modelagem de estruturas e análise de dados.</p>
+    <p>Com uma base sólida em trigonometria, é possível entender melhor o comportamento de sistemas físicos, projetar objetos com precisão e resolver uma infinidade de problemas que surgem no mundo real. </p>
+    <p>Tendo como conceitos fundamentais: triângulos retângulos, ângulos e razoes trigonométricas.</p>
+</div>
+
+  <footer>
+    <div>
+     <p> <strong>Trabalho de Autoria Web</strong><br>
+      Prof. Marcelo Figueiredo Barbosa Júnior.<br>
+      IFRN campus Santa Cruz </p>
+    </div>
+    
+    <div>
+     <p> <strong>Participantes:</strong><br>
+      João Matheus Varela Bezerra Clementino.<br>
+      Kauan Pereira Confessor.<br>
+      Gabriel Guilherme da Silva.<br>
+      Pedro A.C Araújo. </p>
+    </div>
+
+    <div>
+     <p><strong>Fontes:</strong><br>
+      <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia" style="color:white;">https://pt.wikipedia.org/wiki/Wikip%C3%A9dia</a> </p>
+    </div>
+
+    <img src="ifrn.jpeg" alt="IFRN">
+  </footer>
+  
+</body>
+</html>
